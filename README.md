@@ -1,2 +1,2 @@
 # ML_PROJECTS
-This repo contains the ml project 
+I will be uploding new ml projects on this repo every week soo be tuned.....  :)
