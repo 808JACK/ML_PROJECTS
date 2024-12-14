@@ -1,22 +1,23 @@
-# Diabetes Patient Predictor
+# Movie Recommender System
 
 ## What's This About?
-Have you ever wondered if you're at risk for diabetes? This project uses machine learning to predict whether a patient is likely to develop diabetes based on medical data. 
-It analyzes various features such as age, blood pressure, BMI, insulin levels, and more to make an informed prediction.
+Have you ever been unable to decide on your next movie? This project uses content-based filtering to recommend movies that fit your tastes. 
+It analyzes features such as genres, plot descriptions, actors, and much more to give you sensible suggestions.
 
 ## The Dataset
-I used the [Pima Indians Diabetes Database](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database), which contains medical information and diabetes test results from patients. It’s perfect for training a predictive model to determine the likelihood of diabetes.
+I used the TMDB Movie [TMDB Movie Metadata](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata), which is full of some cool movie details—like casts, genres, and keywords. It's great to play around with a recommender system for a movie.
 
 ## How It Works:
-- **Data Collection:** The system uses medical data to train a machine learning model.
-- **Data Preprocessing:** The raw data is cleaned and preprocessed to handle missing values, normalize data, and convert categorical variables.
-- **Model Training:** Various machine learning algorithms, such as logistic regression, decision trees, or SVM, are trained on the data to predict diabetes risk.
-- **Prediction:** Based on a patient’s data, the system predicts whether they are likely to develop diabetes.
+- **It Understands Movies:** The system takes in movie data and extracts the features.
+- **Vectorization:** These features are turned into numerical representations through techniques like TF-IDF or Count Vectorization so that they can be compared mathematically.
+- **Similarity:** It calculates similarities of movies using cosine similarity, etc.
+- **Recommendation:** According to your interest, it recommends movies you'll probably watch next!
 
 ## Tools:
-1. **Python** for coding and implementing machine learning algorithms.
-2. **Streamlit** for creating a user-friendly web interface for diabetes prediction.
-3. **Pickle** for loading pre-trained models (the diabetes prediction model).
-4. **NumPy** for handling numerical data and making predictions.
-5. **Scikit-learn** for building and training the machine learning model and scaling the data.
-6. **Pandas** for data manipulation and preprocessing.
+1. **Python** for everything under the hood.
+2. **Streamlit** for creating a user-friendly web interface for movie recommendations.
+3. **Pandas** for handling and manipulating the movie dataset.
+4. **Scikit-learn** for calculating similarity between movies.
+5. **NLTK** for text preprocessing and cleaning.
+6. **Pickle** for loading pre-trained models (like movie similarity and movie data).
+7. **Requests** for fetching movie posters using the TMDB API.
