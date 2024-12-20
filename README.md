@@ -1,2 +1,2 @@
 # ML_PROJECTS
-I will be uploding new ml projects on this repo every week soo stay tuned.....  :)
+This Repo is all about the Machine Learning projects 
